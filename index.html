@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mortovolio - Tristan's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Background layers -->
+  <canvas id="bgCanvas"></canvas>
+  <div class="gradient-overlay"></div>
+  <div class="black-overlay"></div>
+
+  <!-- Side navigation -->
+  <div class="side-nav">
+    <span data-target="#greeting" class="active" title="Greeting"></span>
+    <span data-target="#skills" title="Skills"></span>
+    <span data-target="#achievements" title="Achievements"></span>
+    <span data-target="#targets" title="Targets"></span>
+    <span data-target="#education" title="Education"></span>
+  </div>
+
+  <!-- Top navigation -->
+  <nav>
+    <div class="logo">Mortovolio</div>
+    <ul>
+      <li><a href="#greeting">Greeting</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#targets">Targets</a></li>
+      <li><a href="#education">Education</a></li>
+    </ul>
+  </nav>
+
+  <!-- Greeting section -->
+  <section id="greeting" class="section">
+    <div class="greeting-card" id="greetingCard">
+      <div class="greeting-card-inner" id="greetingInner">
+        <img src="assets/profile.png" alt="Tristan" class="profile-pic">
+        <h1>Hello, I'm Tristan</h1>
+        <p>
+          Computer Science undergraduate at Binus University, strong foundation
+          in software development and UI/UX design. Skilled in various programming
+          languages including Java, C, SQL, web, game and mobile development.
+          Demonstrates solid teamwork, adaptability, and time management, with a
+          strong willingness to learn.
+        </p>
+        <div class="button-group">
+          <a href="https://www.linkedin.com/in/tristan-theo-0864b3289/"
+             target="_blank" class="btn">LinkedIn</a>
+          <a href="https://github.com/your-github-username"
+             target="_blank" class="btn">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills section -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="programming">Programming</button>
+      <button class="tab-btn" data-tab="tools">Tools</button>
+    </div>
+
+    <!-- Programming tab -->
+    <div class="tab-content active" id="programming">
+      <div class="skill-grid">
+        <div class="skill-card"><img src="assets/python.png"><span>Python</span></div>
+        <div class="skill-card"><img src="assets/c.png"><span>C</span></div>
+        <div class="skill-card"><img src="assets/cpp.png"><span>C++</span></div>
+        <div class="skill-card"><img src="assets/csharp.png"><span>C#</span></div>
+        <div class="skill-card"><img src="assets/java.jpg"><span>Java</span></div>
+        <div class="skill-card"><img src="assets/kotlin.png"><span>Kotlin</span></div>
+        <div class="skill-card"><img src="assets/javascript.png"><span>JavaScript</span></div>
+        <div class="skill-card"><img src="assets/html.png"><span>HTML</span></div>
+        <div class="skill-card"><img src="assets/css.png"><span>CSS</span></div>
+        <div class="skill-card"><img src="assets/sql.png"><span>SQL</span></div>
+        <div class="skill-card"><img src="assets/php.png"><span>PHP</span></div>
+      </div>
+    </div>
+
+    <!-- Tools tab -->
+    <div class="tab-content" id="tools">
+      <div class="skill-grid">
+        <div class="skill-card"><img src="assets/canva.svg"><span>Canva</span></div>
+        <div class="skill-card"><img src="assets/figma.webp"><span>Figma</span></div>
+        <div class="skill-card"><img src="assets/axure.png"><span>Axure</span></div>
+        <div class="skill-card"><img src="assets/github.png"><span>GitHub</span></div>
+        <div class="skill-card"><img src="assets/ubity.svg"><span>Unity</span></div>
+        <div class="skill-card"><img src="assets/jupyter.png"><span>Jupyter Notebook</span></div>
+        <div class="skill-card"><img src="assets/javafx.png"><span>JavaFX</span></div>
+        <div class="skill-card"><img src="assets/jdbc.png"><span>JDBC</span></div>
+        <div class="skill-card"><img src="assets/cisco.webp"><span>Cisco Packet Tracer</span></div>
+        <div class="skill-card"><img src="assets/visualstudio.png"><span>Visual Studio</span></div>
+        <div class="skill-card"><img src="assets/vscode.png"><span>VS Code</span></div>
+        <div class="skill-card"><img src="assets/androidstudio.png"><span>Android Studio</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements section -->
+  <section id="achievements" class="section">
+    <h2>Achievements</h2>
+    <div class="carousel">
+      <div class="carousel-track">
+        <!-- Achievement 1 -->
+        <div class="carousel-item">
+          <img src="assets/achievement1.avif" alt="INC Yearly Program">
+          <h3>INC Yearly Program</h3>
+          <p>
+            Participated in the INC yearly program, gaining valuable experience
+            in leadership, teamwork, and personal development while engaging with
+            peers and mentors in a dynamic environment.
+          </p>
+        </div>
+
+        <!-- Achievement 2 -->
+        <div class="carousel-item">
+          <img src="assets/achievement2.avif" alt="Music Achievements">
+          <h3>Piano & Drum Accomplishments</h3>
+          <p>
+            Reached Grade 5 in both piano and drum courses, starting from Grade 10.
+            Performed live at concerts and events, showcasing dedication and years
+            of practice in music performance and discipline.
+          </p>
+        </div>
+
+        <!-- Achievement 3 -->
+        <div class="carousel-item">
+          <img src="assets/achievement3.webp" alt="Community Service">
+          <h3>Community Service & Activities</h3>
+          <p>
+            Actively participated in school and community programs, including
+            environmental clean-up projects, supporting orphanages, educational
+            trips, and competitions such as math and swimming events.
+          </p>
+        </div>
+
+        <!-- Achievement 4 -->
+        <div class="carousel-item">
+          <img src="assets/achievement3.jpg" alt="Sports Achievements">
+          <h3>Sports Achievements</h3>
+          <p>
+            Won a badminton tournament in Gatam, Bandar Lampung, and represented
+            the school in basketball competitions. Built strong teamwork skills
+            while competing in sports at school and regional levels.
+          </p>
+        </div>
+      </div>
+      <div class="carousel-indicators"></div>
+    </div>
+  </section>
+
+  <!-- Targets section -->
+  <section id="targets" class="section">
+    <h2>Personal Targets & Actions</h2>
+    <div class="target-grid">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/target1.jpg" alt="">
+            <h3>Become Full Stack Developer</h3>
+            <p>Master backend & frontend technologies</p>
+          </div>
+          <div class="flip-card-back">
+            <p>Practice projects, Make Amazing Projects and contribute to open source</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/target2.png" alt="">
+            <h3>Game Development</h3>
+            <p>Create and publish indie games</p>
+          </div>
+          <div class="flip-card-back">
+            <p>Learn Unity & Unreal, join game jams, market games online</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/target3.webp" alt="">
+            <h3>Build Strong Connections</h3>
+            <p>Grow a valuable network</p>
+          </div>
+          <div class="flip-card-back">
+            <p>Connect with like-minded people, showcase skills, and create lasting relationships that value personal and professional worth.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section">
+    <h2>Educational History</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>University of Bina Nusantara</h3>
+          <span class="date">2022 – Present</span>
+          <p>Major in Computer Science</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>SMK Pelita Bangsa</h3>
+          <span class="date">2019 – 2022</span>
+          <p>Specialized in Computer and Network Engineering</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>SMP Pelita Bangsa</h3>
+          <span class="date">2016 – 2019</span>
+          <p>General Education</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Star Kids Primary School</h3>
+          <span class="date">2010 – 2016</span>
+          <p>Primary Education</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
